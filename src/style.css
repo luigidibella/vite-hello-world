@@ -77,3 +77,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+div {
+  border: 1px solid black;
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 1400% 100%; /* Aggiunge un po' di spazio per creare l'effetto di movimento */
+  animation: arcobaleno 60s linear infinite; /* Animazione per far scorrere i colori */
+}
+
+@keyframes arcobaleno {
+  0% { background-position: 0 0; }
+  100% { background-position: 1400% 0; }
+}
